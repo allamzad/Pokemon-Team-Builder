@@ -1,0 +1,223 @@
+/**
+ * Name: Allam Amzad
+ * Email: aamzad@caltech.edu
+ * Date: 5/22/2024
+ * This is the styles.css file for my Final Project Proposal Code. 
+ * This stylesheet builds the view of the Professor Oak's PokeStore
+ * listings page and the product page of each Pokemon. The goal
+ * is a fun, maximalist style to the storepage, which will be 
+ * improved upon as the stylesheet is further developed.
+ */
+
+body, header, main, #poke-info, #poke-info-left, #battle-stat-numbers,
+#recommended-team, #store, #refine-search  {
+  display: flex;
+}
+
+.poke-types p, .shop-card {
+  display: inline-block;
+}
+
+#recommended-team, #store {
+  flex-direction: row;
+}
+
+body, main, #poke-info-left, #refine-search {
+  flex-direction: column;
+}
+
+header, #poke-info, #battle-stat-numbers, #recommended-team,
+#store, #refine-search {
+  justify-content: space-around;
+}
+
+header, main {
+  align-items: center;
+}
+
+header h1, footer, #poke-info, #moves, #listings, #cart {
+  background-color: white;
+}
+
+.shop-card img, #refine-search {
+  background-color: antiquewhite;
+}
+
+#poke-info, #moves, .shop-card img, #poke-info img, #poke-info-right section,
+#cart, .poke-types p, .shop-card {
+  border: solid;
+}
+
+#poke-info, #moves, #poke-info img, #poke-info-right section,
+#cart, .poke-types p, .shop-card, .shop-card img {
+  border-color: black;
+}
+
+.shop-card, .shop-card img, .customize-btn, #poke-info img, 
+#poke-info-right section, #cart-add-btn, #moves button, #cart  {
+  border-radius: 10px;
+}
+
+header h1, #poke-info, #moves {
+  border-radius: 30px;
+}
+
+#poke-info, #moves, .shop-card, .shop-card img {
+  border-width: 5px;
+}
+
+#moves button, .poke-types p {
+  padding: 5px;
+}
+
+#poke-info img, #cart-add-btn, #cart, .customize-btn {
+  padding: 10px;
+}
+
+#poke-info, #moves, #poke-info-right section {
+  padding: 20px;
+}
+
+#poke-info img, #refine-search, .shop-card {
+  padding: 30px;
+}
+
+#poke-info, #moves, #poke-info-right section {
+  margin: 10px;
+}
+
+#cart-add-btn, .customize-btn {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+body {
+  background-image: url("https://c.wallhere.com/photos/11/5f/Pok_mon_Pok_balls_anime_minimalism_cartoon_video_games_digital_art-1202761.jpg!d");
+  background-size: 100%;
+  justify-content: space-between;
+}
+
+header {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/03c19a15-1389-411e-a279-c306d7e9dcbc/ddu5g8d-caa04059-62cb-4e4c-a0fa-8e9dd64975ee.png/v1/fill/w_1024,h_342,q_80,strp/pokemon_twitter_banner_by_wile_z_kitsune_ddu5g8d-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MzQyIiwicGF0aCI6IlwvZlwvMDNjMTlhMTUtMTM4OS00MTFlLWEyNzktYzMwNmQ3ZTlkY2JjXC9kZHU1ZzhkLWNhYTA0MDU5LTYyY2ItNGU0Yy1hMGZhLThlOWRkNjQ5NzVlZS5wbmciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.XycyhIuYb8F563j20f635Pdsf-SpIfj9kmaS8Fe_DBo");
+  margin: 0;
+}
+
+header img {
+  justify-items: center;
+}
+
+header h1 {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: 70px;
+  color: rgb(236, 244, 79);
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 1px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+h1, h2, h3, p, button, label {
+  font-family: Verdana, sans-serif;
+}
+
+#poke-info, #moves {
+  width: 50%;
+}
+
+#poke-info h1, #listings h1, .poke-types p, h2, footer {
+  text-align: center;
+}
+
+#poke-info img {
+  width: 200px;
+  background-color: silver;
+}
+
+#poke-info-left {
+  justify-content: flex-start;
+}
+
+#poke-info-right section {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#poke-info-right h2 {
+  margin-top: 0;
+}
+
+#cart-add-btn {
+  font-size: 20px;
+}
+
+.move-selected {
+  background-color: rgb(171, 247, 171);
+}
+
+#listings {
+  width: 80%;
+  padding: 50px;
+}
+
+#recommended-team {
+  flex-wrap: wrap;
+}
+
+#cart {
+  width: 100px;
+}
+
+.poke-types p {
+  border-radius: 5px;
+  color: white;
+}
+
+.customize-btn {
+  font-size: 15px;
+}
+
+.shop-card {
+  justify-content: center;
+}
+
+.shop-card img {
+  width: 250px;
+}
+
+#refine-search {
+  width: 20%;
+}
+
+#shiny-btn {
+  margin-top: 10px;
+}
+
+/* Pokemon type colors (the rest to be added later). */
+
+.fire {
+  background-color: rgb(255, 136, 0);
+}
+
+.water {
+  background-color: rgb(156, 188, 248);
+}
+
+.flying {
+  background-color: rgb(212, 171, 250);
+}
+
+.psychic {
+  background-color: rgb(237, 77, 130);
+}
+
+.dragon {
+  background-color: blueviolet;
+}

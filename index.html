@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<!--
+CS 132 Final Proposal Code 
+
+Name: Allam Amzad
+Email: aamzad@caltech.edu
+Date: 5/22/2024
+
+HTML for the Professor Oak's Pokemon Store where users can
+build a team of 6 Pokemon and check them out. Featured on 
+this page are recommended teams from Pokemon Showdown and 
+all Pokemon in the Pokedex are below that.
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon Product page</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Koulen&display=swap" rel="stylesheet">
+  <!-- Source: CDNFonts -->
+  <link href="https://fonts.cdnfonts.com/css/pokemon-solid" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="utils.js"></script>
+  <script defer src="pokemon.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- Source: Behind the Voice Actors -->
+    <img src="https://gamepress.gg/pokemonmasters/sites/pokemonmasters/files/2020-02/ch0137_00_orchid1_256.ktx_.png" alt="Professor Oak">
+    <h1>Professor Oak's PokeShop</h1>
+    <!-- Source: Iconfinder -->
+    <img id="cart" src="https://cdn.icon-icons.com/icons2/851/PNG/512/Shopping_Bag_icon-icons.com_67506.png" alt="Pokemon Cart">
+  </header>
+
+  <main id="store">
+    <div id="listings">
+      <h1>Pokemon Shop</h1>
+      <!-- Full recommended team not added yet-->
+      <hr>
+      <h1>Recommended Team</h1>
+      <section id="recommended-team">
+        <div class="shop-card">
+          <!-- Source: PokeAPI -->
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/384.png" alt="Rayquaza">
+          <h2>Rayquaza</h2>
+          <div class="poke-types">
+            <p class="flying">Flying</p>
+            <p class="dragon">Dragon</p>
+          </div>
+          <button class="customize-btn">Add to Cart</button>
+        </div>
+        <div class="shop-card">
+          <!-- Source: PokeAPI -->
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png" alt="Mewtwo">
+          <h2>Mewtwo</h2>
+          <div class="poke-types">
+            <p class="psychic">Psychic</p>
+          </div>
+          <button class="customize-btn">Add to Cart</button>
+        </div>
+        <div class="shop-card">
+          <!-- Source: PokeAPI -->
+          <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png" alt="Charizard">
+          <h2>Charizard</h2>
+          <div class="poke-types">
+            <p class="fire">Fire</p>
+          </div>
+          <button class="customize-btn">Add to Cart</button>
+        </div>
+        
+      </section>
+      <section id="all-pokemon">
+        <!-- Section will be filled in using PokeAPI GET request. -->
+      </section>
+    </div>
+    <!-- This will not be hard coded in final product. -->
+    <aside id="refine-search">
+      <h2>Refine Search</h2>
+        <div>
+          <input type="checkbox" id="normal-check" name="normal">
+          <label>Normal</label>
+        </div>
+        <div>
+          <input type="checkbox" id="fire-check" name="fire">
+          <label>Fire</label>
+        </div>
+        <div>
+          <input type="checkbox" id="water-check" name="water">
+          <label>Water</label>
+        </div>
+        <div>
+          <input type="checkbox" id="electric-check" name="electric">
+          <label>Electric</label>
+        </div>
+        <div>
+          <input type="checkbox" id="grass-check" name="grass">
+          <label>Grass</label>
+        </div>
+        <div>
+          <input type="checkbox" id="ice-check" name="ice">
+          <label>Ice</label>
+        </div>
+        <div>
+          <input type="checkbox" id="fighting-check" name="fighting">
+          <label>Fighting</label>
+        </div>
+        <div>
+          <input type="checkbox" id="poison-check" name="poison">
+          <label>Poison</label>
+        </div>
+        <div>
+          <input type="checkbox" id="ground-check" name="ground">
+          <label>Ground</label>
+        </div>
+        <div>
+          <input type="checkbox" id="flying-check" name="flying">
+          <label>Flying</label>
+        </div>
+        <div>
+          <input type="checkbox" id="psychic-check" name="psychic">
+          <label>Psychic</label>
+        </div>
+        <div>
+          <input type="checkbox" id="bug-check" name="bug">
+          <label>Bug</label>
+        </div> 
+        <div>
+          <input type="checkbox" id="rock-check" name="rock">
+          <label>Rock</label>
+        </div>
+        <div>
+          <input type="checkbox" id="ghost-check" name="ghost">
+          <label>Ghost</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dragon-check" name="dragon">
+          <label>Dragon</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dark-check" name="dark">
+          <label>Dark</label>
+        </div>
+        <div>
+          <input type="checkbox" id="steel-check" name="steel">
+          <label>Steel</label>
+        </div>
+        <div>
+          <input type="checkbox" id="fairy-check" name="fairy">
+          <label>Fairy</label>
+        </div>
+    </aside>
+  </main>
+  <footer>
+    <!-- Contact Us information needs to be added. -->
+    <p>
+      Data from 
+      <a href="https://pokeapi.co/" target="_blank">PokeApi</a>
+    </p>
+  </footer>
+</body>
+</html>
